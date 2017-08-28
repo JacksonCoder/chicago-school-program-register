@@ -1,0 +1,22 @@
+{
+  "name": "CSPR (Chicago School Program Register)",
+  "description": "A API that provides aggregated information about Chicago school programs",
+  "repository": "https://github.com/JacksonCoder/chicago-school-program-register",
+  "keywords": ["python", "flask"],
+  "addons": [
+    {
+        "plan": "heroku-postgresql",
+        "options": {
+            "version": "9.5"
+        }
+    }
+    ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
